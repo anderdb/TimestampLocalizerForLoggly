@@ -1,4 +1,6 @@
 
+var recheckIntervalMs = 500;
+
 var localeTimeStringOptions = {
 	year: "numeric", month: "numeric", day: "numeric", 
 	hour: "2-digit", minute: "2-digit", second: "2-digit",
@@ -21,4 +23,4 @@ var readyStateCheckInterval = setInterval(function() {
 			}			
 		}
 	}
-}, 1000);
+}, recheckIntervalMs);
